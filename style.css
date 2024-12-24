@@ -43,30 +43,40 @@ header {
 }
 
 .contact-links a {
-    color: #007bff;
+    color: #61b390; /* Updated link color */
     text-decoration: none;
 }
 
 .contact-links a:hover {
     text-decoration: underline;
+    color: #4e9175; /* Darker shade for hover */
 }
 
 .contact-links i {
-    color: #007bff;
+    color: #61b390; /* Updated icon color */
 }
 
-/* General Section Styling */
-.section {
-    margin-bottom: 20px;
+/* Skills Buttons */
+.skills button {
+    padding: 8px 12px;
+    margin: 1px;
+    border: none;
+    background-color: #61b390; /* Button color */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
 }
 
-.section h2 {
-    margin-bottom: 10px;
+.skills button:hover {
+    background-color: #4e9175; /* Darker shade for hover */
 }
 
 /* Grid Layout for Two-Column Section */
 .grid-layout {
     display: flex;
+    flex-wrap: nowrap; /* Allow wrapping for smaller screens */
+    gap: 20px;
 }
 
 .column-8 {
@@ -79,49 +89,37 @@ header {
     max-width: 33.33%;
 }
 
-/* Subsections for Skills */
-.subsection h3 {
-    margin-top: 10px;
-    font-size: 18px;
-    color: #333;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-layout {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .column-8, .column-4 {
+        flex: 0 0 100%; /* Full width for each column */
+        max-width: 100%;
+    }
+
+    .contact-links {
+        flex-direction: column; /* Stack contact items vertically */
+        align-items: flex-start; /* Align items to the left */
+        gap: 10px; /* Reduce spacing */
+    }
 }
 
-/* Skills Buttons */
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Slightly smaller font for mobile */
+    }
+
+    .contact-links span {
+        font-size: 14px; /* Adjust font size for small screens */
+    }
+
+    .skills button {
+        font-size: 12px; /* Smaller buttons for mobile */
+        padding: 6px 10px; /* Adjust button padding */
+    }
 }
 
 
-
-/* Contact Links */
-.contact-links i {
-    color: #61b390; /* Updated icon color */
-}
-
-.contact-links a {
-    color: #61b390; /* Updated link color */
-    text-decoration: none;
-}
-
-.contact-links a:hover {
-    text-decoration: underline;
-    color: #4e9175; /* Darker shade for hover */
-}
-
-/* Skills Buttons */
-.skills button {
-    padding: 8px 12px;
-    border: none;
-    background-color: #61b390; /* Button color */
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.skills button:hover {
-    background-color: #4e9175; /* Darker shade for hover */
-}
