@@ -43,7 +43,7 @@ header {
 }
 
 .contact-links a {
-    color: #61b390; /* Updated link color */
+    color: #000000; /* Updated link color */
     text-decoration: none;
 }
 
@@ -53,7 +53,7 @@ header {
 }
 
 .contact-links i {
-    color: #61b390; /* Updated icon color */
+    color: #000000; /* Updated icon color */
 }
 
 /* Skills Buttons */
