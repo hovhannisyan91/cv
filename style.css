@@ -123,3 +123,47 @@ header {
 }
 
 
+
+/* Style for Company Icons */
+.company-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+    border: none; /* Prevent link underline from affecting the image */
+}
+/* Present Job Styling */
+.job.present h3 {
+    color: #000; /* Black color for present jobs */
+    font-weight: bold; /* Make the text bold for emphasis */
+}
+
+/* Past Job Styling */
+.job.past h3 {
+    color: #828282; /* Brighter gray for past jobs */
+    font-weight: bold; /* Regular font weight */
+}
+
+/* Add slight hover effect for both */
+
+
+a img.company-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+    text-decoration: none;
+    border: none; /* Remove border around the image */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect: Make the image appear bolder */
+a img.company-icon:hover {
+    filter: brightness(1.5); /* Increase brightness to make it "bolder" */
+    transform: scale(1.1); /* Slightly enlarge the image for emphasis */
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none; /* Remove underline from all links by default */
+}
