@@ -167,3 +167,18 @@ a img.company-icon:hover {
 a {
     text-decoration: none; /* Remove underline from all links by default */
 }
+
+
+.experience-icon {
+    color: #000; /* Black color for the icon */
+    font-size: 24px; /* Adjust icon size */
+    margin-right: 8px; /* Space between the icon and the text */
+    vertical-align: middle; /* Align the icon with the text */
+}
+
+.education-icon {
+    color: #000; /* Black color for the icon */
+    font-size: 24px; /* Adjust icon size */
+    margin-right: 8px; /* Space between the icon and the text */
+    vertical-align: middle; /* Align the icon with the text */
+}
